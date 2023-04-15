@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+  </head>
+  <body>
+    <header>
+      <div id="menu">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="home.html">
+              <img src="images/M logo white.png" alt="Logo">
+              <h1>James Kyprianou</h1>
+            </a>
+          </div>
+          <label for="burger" id="menu-button" class="burger">
+            <div class="menu-bars">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
+          </label>
+          <div id="menu-items" style="display:none;">
+            <div class="mobile-menu">
+              <div class="menu-close">
+                <div class="logo">
+                  <img src="images/M logo black.png" alt="Logo">
+                  James Kyprianou
+               </div>
+              </div>
+              <div class="mobile-menu-layout">
+                <ul>
+                  <li class="menu-home" id="home-link1"><a href="home.html">Home</a></li>
+                  <li class="menu-about" id="about-link1"><a href="about.html">About</a></li>
+                  <li class="menu-portfolio" id="portfolio-link1"><a href="portfolio.html">Portfolio</a></li>
+                  <li class="menu-enquire" id="enquire-link1"><a href="enquire.html">Enquire</a></li>
+                  <div class="close-button" >
+                  <li<button id="close-button"class="menu-enquire">Back</button></li>
+                </div>
+                </ul>
+                <div class="logo-layout-mobile1">
+                  <hr>
+                  <div class="logo-layout-mobile">
+                    <a href="https://www.instagram.com/your_username/">
+                      <img src="images/instagram.png" alt="Instagram" class="insta-logo">
+                    </a>
+                    <a href="https://www.twitter.com/your_username/">
+                      <img src="images/linkedin.png" alt="linkedin" class="linkedin-logo">
+                    </a>
+                    <a href="https://www.twitter.com/your_username/">
+                      <img src="images/mail-icon.png" alt="mail" class="mail-logo">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <ul>
+              <li class="menu-home" id="home-link"><a href="home.html">Home</a></li>
+              <li class="menu-about" id="about-link"><a href="about.html">About</a></li>
+              <li class="menu-portfolio" id="portfolio-link"><a href="portfolio.html">Portfolio</a></li>
+              <li class="menu-enquire" id="enquire-link"><a href="enquire.html">Enquire</a></li>
+            </ul>
+          </div>
+        </nav>
+        <hr>
+      </div>
+    </header>
+    <script>
+      // Hide mobile menu when close button is clicked
+      const closeButton = document.getElementById("close-button");
+      const menuItemsContainer = document.getElementById("menu-items");
+      closeButton.addEventListener("click", function() {
+        menuItemsContainer.style.display = "none";
+      });
+      </script>
+    <script src="menu.js"></script>
+    <script src="current-page.js"></script>
+  </body>
+</html>
